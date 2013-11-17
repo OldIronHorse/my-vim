@@ -12,6 +12,8 @@ Bundle 'gmarik/vundle'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-fireplace'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'Shougo/neocomplcache'
 
 filetype plugin indent on
 
