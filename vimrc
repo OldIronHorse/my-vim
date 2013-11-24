@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 
-filetype plugin indent on
+"filetype plugin indent on
 
 set number
 set tabstop=4 expandtab
