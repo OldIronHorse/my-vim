@@ -3,6 +3,7 @@ Plug 'unisonweb/unison', { 'rtp': 'editor-support/vim' }
 Plug 'dikiaap/minimalist',
 Plug 'tpope/vim-sensible',
 Plug 'sentientmachine/Pretty-Vim-Python'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 set number
@@ -32,3 +33,5 @@ set t_Co=256
 colorscheme molokai
 highlight Comment cterm=bold
 set cc=80
+
+let g:go_fmt_command = "goimports"
