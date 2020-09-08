@@ -30,8 +30,10 @@ syntax on
 let g:rehash256 = 1
 let g:molokai_original = 1
 set t_Co=256
-colorscheme molokai
+colorscheme monokai
 highlight Comment cterm=bold
 set cc=80
 
 let g:go_fmt_command = "goimports"
+
+let g:lisp_rainbow = 1
