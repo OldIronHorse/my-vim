@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'unisonweb/unison', { 'rtp': 'editor-support/vim' }
 Plug 'dikiaap/minimalist',
 Plug 'tpope/vim-sensible',
 Plug 'sentientmachine/Pretty-Vim-Python'
@@ -24,6 +23,7 @@ set list
 set listchars=tab:→\ ,trail:·,nbsp:·
 
 autocmd Filetype python setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
+autocmd Filetype coconut setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
 autocmd Filetype make setlocal noexpandtab
 set autoindent
 syntax on
