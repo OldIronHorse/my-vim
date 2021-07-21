@@ -3,6 +3,8 @@ Plug 'dikiaap/minimalist',
 Plug 'tpope/vim-sensible',
 Plug 'sentientmachine/Pretty-Vim-Python'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'cespare/vim-toml'
 call plug#end()
 
 set number
@@ -22,6 +24,7 @@ set tabstop=2 expandtab shiftwidth=2 smarttab softtabstop=2
 set list
 set listchars=tab:→\ ,trail:·,nbsp:·
 
+autocmd Filetype julia setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
 autocmd Filetype python setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
 autocmd Filetype coconut setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
 autocmd Filetype make setlocal noexpandtab
