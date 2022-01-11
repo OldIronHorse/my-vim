@@ -12,6 +12,10 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'cespare/vim-toml'
 Plug 'haystackandroid/snow'
+Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
+Plug 'mangeshrex/uwu.vim'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'nanotech/jellybeans.vim'
 call plug#end()
 
 set number
@@ -41,7 +45,8 @@ let g:rehash256 = 1
 let g:molokai_original = 1
 set t_Co=256
 set background=dark
-colorscheme snow
+colorscheme jellybeans
+" colorscheme snow
 " colorscheme monokai
 highlight Comment cterm=bold
 set cc=80
