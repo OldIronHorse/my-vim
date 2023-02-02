@@ -35,6 +35,7 @@ set tabstop=2 expandtab shiftwidth=2 smarttab softtabstop=2
 set list
 set listchars=tab:→\ ,trail:·,nbsp:·
 
+autocmd BufNewFile,BufRead *.mustache :set filetype=html
 autocmd Filetype julia setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
 autocmd Filetype python setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
 autocmd Filetype coconut setlocal tabstop=4 expandtab shiftwidth=4 smarttab softtabstop=4
@@ -45,7 +46,8 @@ let g:rehash256 = 1
 let g:molokai_original = 1
 set t_Co=256
 set background=dark
-colorscheme jellybeans
+colorscheme habamax
+" colorscheme jellybeans
 " colorscheme snow
 " colorscheme monokai
 highlight Comment cterm=bold
