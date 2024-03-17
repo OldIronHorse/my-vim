@@ -7,15 +7,17 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'dikiaap/minimalist',
 Plug 'tpope/vim-sensible',
-Plug 'sentientmachine/Pretty-Vim-Python'
+"Plug 'sentientmachine/Pretty-Vim-Python'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'JuliaEditorSupport/julia-vim'
 Plug 'cespare/vim-toml'
 Plug 'haystackandroid/snow'
 Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
 Plug 'mangeshrex/uwu.vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'nanotech/jellybeans.vim'
+"Plug 'elixir-editors/vim-elixir'
+"Plug 'unisonweb/unison', { 'branch': 'trunk', 'rtp': 'editor-support/vim' }
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 set number
@@ -54,3 +56,7 @@ set cc=80
 let g:go_fmt_command = "goimports"
 
 let g:lisp_rainbow = 1
+
+filetype plugin indent on
+autocmd BufRead,BufNewFile *.ex,*.exs,mix.lock set filetype=elixir
+autocmd BufRead,BufNewFile *.u set filetype=unison
