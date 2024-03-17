@@ -48,8 +48,7 @@ let g:rehash256 = 1
 let g:molokai_original = 1
 set t_Co=256
 set background=dark
-colorscheme habamax
-" colorscheme jellybeans
+colorscheme jellybeans
 " colorscheme snow
 " colorscheme monokai
 highlight Comment cterm=bold
