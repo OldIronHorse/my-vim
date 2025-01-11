@@ -18,6 +18,7 @@ Plug 'nanotech/jellybeans.vim'
 "Plug 'elixir-editors/vim-elixir'
 "Plug 'unisonweb/unison', { 'branch': 'trunk', 'rtp': 'editor-support/vim' }
 Plug 'sheerun/vim-polyglot'
+Plug 'ChrisWellsWood/roc.vim'
 call plug#end()
 
 set number
@@ -61,3 +62,6 @@ let g:lisp_rainbow = 1
 filetype plugin indent on
 autocmd BufRead,BufNewFile *.ex,*.exs,mix.lock set filetype=elixir
 autocmd BufRead,BufNewFile *.u set filetype=unison
+autocmd BufRead,BufNewFile *.roc set filetype=roc
+
+let g:rustfmt_autosave = 1
